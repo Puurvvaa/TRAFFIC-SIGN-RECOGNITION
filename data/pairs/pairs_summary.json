@@ -1,0 +1,11 @@
+{
+  "total_pairs": 150,
+  "similar_pairs": 75,
+  "dissimilar_pairs": 75,
+  "train_pairs": 105,
+  "val_pairs": 22,
+  "test_pairs": 23,
+  "train_split": 0.7,
+  "val_split": 0.15,
+  "test_split": 0.15
+}

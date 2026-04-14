@@ -1,0 +1,15 @@
+{
+  "classes": {
+    "1": "Speed limit 30 km/h",
+    "2": "Speed limit 50 km/h",
+    "5": "Speed limit 80 km/h",
+    "14": "Stop",
+    "17": "No entry"
+  },
+  "image_size": 32,
+  "train_images_per_class": 6,
+  "reference_images_per_class": 2,
+  "total_classes": 5,
+  "total_images_per_class": 8,
+  "total_images": 40
+}
