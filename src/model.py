@@ -6,7 +6,8 @@ Task: Build Siamese architecture for similarity learning
 
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers, Model
+from tensorflow.keras import layers
+from tensorflow.keras.models import Model
 import numpy as np
 import json
 from pathlib import Path

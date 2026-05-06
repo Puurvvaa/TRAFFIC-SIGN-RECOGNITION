@@ -20,7 +20,7 @@ def main():
     print("╚" + "=" * 68 + "╝\n")
 
     trainer = SiameseTrainer()
-    model = trainer.train(epochs=50, batch_size=32)
+    model = trainer.train(epochs=50, batch_size=16)
 
     print("\n Model trained and saved!")
     print(" Location: models/siamese_model.h5")

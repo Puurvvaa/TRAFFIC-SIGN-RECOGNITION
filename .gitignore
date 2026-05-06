@@ -10,6 +10,7 @@ node_modules/
 # Ignore build folder
 dist/
 
-
+__pycache__/
+*.pyc
 
 

@@ -12,8 +12,7 @@ import json
 from pathlib import Path
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-
-from model import SiameseNetwork
+from .model import SiameseNetwork
 
 
 class PairDataLoader:
@@ -79,7 +78,7 @@ class SiameseTrainer:
 
         siamese = SiameseNetwork(input_shape=(32, 32, 3), feature_dim=128)
         model = siamese.build_siamese_model()
-        siamese.compile_model(learning_rate=0.001)
+        siamese.compile_model(learning_rate=0.0001)
 
         # Display architecture
         siamese.summary()
@@ -116,7 +115,7 @@ class SiameseTrainer:
         callbacks = [
             keras.callbacks.EarlyStopping(
                 monitor='val_loss',
-                patience=10,
+                patience=20,
                 restore_best_weights=True,
                 verbose=1
             ),
@@ -210,4 +209,4 @@ class SiameseTrainer:
 
 if __name__ == "__main__":
     trainer = SiameseTrainer()
-    trainer.train(epochs=50, batch_size=32)
+    trainer.train(epochs=50, batch_size=16)
